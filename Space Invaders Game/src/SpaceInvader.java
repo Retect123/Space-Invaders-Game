@@ -1,23 +1,4 @@
-
-// Write your compliance statement here:
-// What are your 4 extra features?
-// How is your new alien different from the one described by the Alien class?
-
 /**
- * Our program meets the requirements because we have 4 extra features.
- * Our first feature was making the space ship move in every direction (left, right, up, and down).
- * Our second feature was making the aliens move left and right randomly, making them harder to shoot.
- * Our third feature was increasing the difficulty of the game. For example, once the player kills all
- * of the regular aliens, they move onto the boss level which features a bigger and faster alien with more health.
- * Our fourth feature was making a life system. The player only has one life, so if they get touched by
- * an alien in any way they lose.
- * We also created a new kind of alien called the SuperAlien, which passes the requirement of making
- * a new kind of alien. The super alien is way bigger than the regular aliens, two times as fast and has way more health.
- * We also meet the basic requirements because every time an alien is shot, it's color changes. The aliens
- * also spawn at different heights and gradually move down the screen. When an alien is dead, it is no longer
- * on the screen, and if there are no more aliens on the screen, a prompt window comes up indicating that the
- * user has won. We also have a prompt window at the beginning to make sure our user knows the controls.
- * 
  * @author JORDAN CHAU
  */
 
