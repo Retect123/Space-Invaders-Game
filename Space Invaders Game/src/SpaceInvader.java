@@ -111,7 +111,6 @@ public class SpaceInvader extends GWindowEventAdapter {
 
 		// Create 12 aliens
 		// Spawn aliens at random location
-		// (Make sure that the space ship can fire at them)
 		int min_X = 10 * Alien.RADIUS; // Minimum X position offset
 		int max_X = this.window.getWindowWidth() - 10 * Alien.RADIUS; // Maximum X position
 
@@ -157,11 +156,6 @@ public class SpaceInvader extends GWindowEventAdapter {
 	 * Selects the action requested by the pressed key
 	 */
 	public void keyPressed(GWindowEvent e) {
-		// Don't perform the actions (such as shoot) directly in this method.
-		// Do the actions in timerExpired, so that the alien ArrayList can't be
-		// modified at the same time by two methods (keyPressed and timerExpired
-		// run in different threads).
-
 		switch (Character.toLowerCase(e.getKey())) // not case sensitive
 		{
 		// Code to move the space ship using keyboard
@@ -351,11 +345,6 @@ public class SpaceInvader extends GWindowEventAdapter {
      * Does the player want to play again?
      */
     public boolean anotherGame(String s) {
-        // this method is useful at the end of a game if you want to prompt the
-        // user
-        // for another game (s would be a String describing the outcome of the
-        // game
-        // that just ended, e.g. "Congratulations, you saved the Earth!")
         int choice;
         if (s.contains("Congratulations, you saved the Earth")) {
             // Special message if SuperAlien is killed
