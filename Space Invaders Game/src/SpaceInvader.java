@@ -18,7 +18,7 @@
  * on the screen, and if there are no more aliens on the screen, a prompt window comes up indicating that the
  * user has won. We also have a prompt window at the beginning to make sure our user knows the controls.
  * 
- * @author JORDAN CHAU and NOLAN MUONGCHAN
+ * @author JORDAN CHAU
  */
 
 import java.awt.Color;
